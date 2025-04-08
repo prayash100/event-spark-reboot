@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         Your all-in-one event management solution for private & public events.
       </p>
       <Link to="/signup">
-        <Button size="lg" className="bg-white text-primary hover:bg-gray-100 font-semibold text-lg px-8 hero-button">
+        <Button size="lg" className="bg-white text-primary hover:bg-secondary/80 hover:text-primary-foreground font-semibold text-lg px-8 hero-button">
           Get Started
         </Button>
       </Link>

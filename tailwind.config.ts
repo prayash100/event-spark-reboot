@@ -63,18 +63,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				eventblue: {
-					DEFAULT: '#1877F2', // Main blue from your image
-					50: '#E6F0FE',
-					100: '#CCE0FD',
-					200: '#99C2FB',
-					300: '#66A3F9',
-					400: '#3385F7',
-					500: '#1877F2', // Same as DEFAULT
-					600: '#0A5FD4',
-					700: '#0847A0',
-					800: '#05306C',
-					900: '#031838',
+				eventorange: {
+					DEFAULT: '#EA580C', // Main orange - primary
+					50: '#FEF3E7',
+					100: '#FDE7CF',
+					200: '#FBCA9F',
+					300: '#F8AD6F',
+					400: '#F5903F',
+					500: '#F97316', // Secondary
+					600: '#EA580C', // Same as DEFAULT - primary
+					700: '#C2410C',
+					800: '#9A3412',
+					900: '#7C2D12',
 				}
 			},
 			borderRadius: {
