@@ -35,17 +35,17 @@ const Events: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <div className="bg-primary/10 py-10">
+      <div className="bg-muted py-10">
         <div className="max-w-7xl mx-auto px-6">
           <h1 className="text-3xl font-bold mb-6">Discover Events</h1>
           
           <div className="flex flex-col md:flex-row gap-4 mb-6">
             <div className="relative flex-grow">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground" size={20} />
               <input 
                 type="text" 
                 placeholder="Search events..."
-                className="w-full pl-10 pr-4 py-2 border rounded-lg"
+                className="w-full pl-10 pr-4 py-2 border rounded-lg bg-card text-foreground"
               />
             </div>
             
@@ -65,16 +65,16 @@ const Events: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {events.map(event => (
-            <div key={event.id} className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-gray-200"></div>
+            <div key={event.id} className="tile-card rounded-lg">
+              <div className="h-48 bg-muted"></div>
               <div className="p-4">
                 <span className="inline-block px-2 py-1 bg-primary/10 text-primary rounded text-sm mb-2">{event.category}</span>
                 <h3 className="text-xl font-semibold mb-1">{event.title}</h3>
-                <div className="flex items-center text-gray-600 mb-1">
+                <div className="flex items-center text-muted-foreground mb-1">
                   <Calendar size={16} className="mr-2" />
                   <span>{event.date}</span>
                 </div>
-                <p className="text-gray-600 mb-4">{event.location}</p>
+                <p className="text-muted-foreground mb-4">{event.location}</p>
                 <Button className="w-full">View Details</Button>
               </div>
             </div>
